@@ -1,10 +1,16 @@
 #!/usr/bin/python3
+
+
 class Square:
-    """Square - defines a square checks if its a digit >= 0"""
+    '''Class Square object intialized with size
+    '''
+    pass
+
     def __init__(self, size=0):
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = size
+        '''init method of class Square
+        '''
+        if type(size) != int:
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
