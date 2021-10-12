@@ -1,13 +1,10 @@
-#!/usr/bin/
-""" function that returns an object (Python data structure) represented by a JSON string
-"""
+#!/usr/bin/python3
+"""defining from_json_string function"""
+
 
 import json
 
 
 def from_json_string(my_str):
-    """
-    Decodes to json
-    :param my_obj: Parsed obj
-    """
+    """return json string"""
     return json.loads(my_str)
