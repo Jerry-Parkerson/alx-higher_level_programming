@@ -12,6 +12,6 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'w', encoding='utf-8') as fw:
         return fw.write(text)
-    """with open(filename, 'r') as fr:
+    with open(filename, 'r') as fr:
         nb_chars = len(fr.read())
-        return nb_chars"""
+        return nb_chars
